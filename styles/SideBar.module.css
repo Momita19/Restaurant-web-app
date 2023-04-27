@@ -1,0 +1,65 @@
+/* Default styles */
+.sidebar {
+    position: fixed;
+    top: 0px;
+    left: 72px;
+    height: 100vh;
+    width: 221px !important;
+    background-color: rgba(255, 255, 255, 0.5) !important; /* set the background color with alpha transparency */
+    gap: 508px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: monospace; 
+  }
+  
+  .sidebar ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .sidebar li {
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .sidebar li:last-child {
+    border-bottom: none;
+  }
+  
+  .sidebar a {
+    display: block;
+    padding: 16px;
+    text-decoration: none;
+    color: #333;
+    font-size: 36px;
+    font-weight: 500;
+  }
+  
+  /* Responsive styles for screens smaller than 768px */
+  @media (max-width: 767px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      background-color: rgba(255, 255, 255, 1); /* set the background color to opaque */
+    }
+  
+    .sidebar li {
+      border-bottom: none;
+    }
+  }
+  
+  /* Responsive styles for screens larger than 768px */
+  @media (min-width: 768px) {
+    .sidebar {
+      width: 250px;
+      background-color: rgba(255, 255, 255, 0.5); /* set the background color with alpha transparency */
+    }
+  
+    .sidebar li {
+      border-bottom: 1px solid #ddd;
+    }
+  }
+  
